@@ -5,7 +5,7 @@ iOS：解决页面切换导航栏效果顽疾
 
 ## Root
 
-(```)
+```
 override func viewWillAppear(_ animated: Bool) {
 super.viewWillAppear(animated)
 //        self.navigationController?.navigationBar.setBackgroundImage(UIImage(color:UIColor.kcGreen), for: .default)
@@ -26,11 +26,11 @@ override func viewWillDisappear(_ animated: Bool) {
 self.navigationController?.setNavigationBarHidden(false, animated: true)
 super.viewWillDisappear(animated)
 }
-(```)
+```
 
 ## With Navi
 
-(```)
+```
 override func viewWillAppear(_ animated: Bool) {
 super.viewWillAppear(animated)
 self.navigationController?.navigationBar.setBackgroundImage(UIImage(color:UIColor.kcRed), for: .default)
@@ -41,11 +41,11 @@ debugPrint("complete")
 })
 
 }
-(```)
+```
 
 ## Without Navi
 
-(```)
+```
 override func viewWillAppear(_ animated: Bool) {
 super.viewWillAppear(animated)
 //        self.navigationController?.navigationBar.setBackgroundImage(UIImage(color:UIColor.kcGreen), for: .default)
@@ -55,4 +55,4 @@ self.navigationController?.navigationBar.alpha = 0.0
 debugPrint("complete")
 })
 }
-(````)
+````
